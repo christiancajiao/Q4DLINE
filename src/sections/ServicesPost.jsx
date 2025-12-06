@@ -1,0 +1,64 @@
+import React from 'react';
+
+const ServicesPost = () => {
+    return (
+        <section id="services-post" className="py-24 bg-brand-black text-white">
+            <div className="container mx-auto px-6">
+
+                <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 h-auto lg:h-[600px]">
+
+                    {/* 1. Description Card (Top Left) */}
+                    <div className="bg-brand-gray border border-gray-700 p-8 flex flex-col justify-center rounded-lg">
+                        <h3 className="text-3xl font-bold mb-6 tracking-widest uppercase text-white">
+                            Services - Post
+                        </h3>
+                        <div className="w-12 h-1 bg-white mb-8"></div>
+                        <p className="text-gray-300 leading-relaxed text-lg">
+                            We polish the final piece to perfection. Our post-production pipeline handles everything from advanced grooming and simulation to lighting, compositing, and visual effects. We ensure that every frame meets the highest standards of visual fidelity and artistic intent.
+                        </p>
+                    </div>
+
+                    {/* 2. Wireframe Scene (Top Center) */}
+                    <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
+                        <iframe
+                            className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
+                            src="https://www.youtube.com/embed/v2omUQWFNnI?autoplay=1&mute=1&controls=0&loop=1&playlist=v2omUQWFNnI"
+                            title="Wireframe Pass"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                        <div className="absolute bottom-2 left-2 bg-black/70 px-2 py-1 text-xs rounded text-white">Wireframe Pass</div>
+                    </div>
+
+                    {/* 3. Final Render (Right Column - Spans 2 Rows) */}
+                    <div className="lg:col-span-1 lg:row-span-2 rounded-lg overflow-hidden border border-gray-800 relative group h-96 lg:h-auto">
+                        <img
+                            src="https://i.postimg.cc/zfQbfQHm/john-astudillo-pelo.jpg"
+                            alt="Final High-Quality Render"
+                            className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
+                            <span className="text-white font-bold tracking-wider">FINAL RENDER</span>
+                        </div>
+                    </div>
+
+                    {/* 4. Grooming/Tech (Bottom Left - Spans 2 Columns) */}
+                    <div className="lg:col-span-2 bg-blue-300/40  rounded-lg overflow-hidden border border-blue-900/50 relative group h-64 lg:h-auto fit-content">
+                        <img
+                            src="https://i.postimg.cc/8PgvWxKs/john-astudillo-xgen-pasos.jpg"
+                            alt="Grooming Simulation"
+                            className="w-full h-full object-contain mix-blend-overlay opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                        />
+                        <div className="absolute inset-0 bg-blue-500/10"></div>
+                        <div className="absolute bottom-2 left-2 bg-black/70 px-2 py-1 text-xs rounded text-white">XGen / Grooming</div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    );
+};
+
+export default ServicesPost;
