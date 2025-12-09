@@ -27,7 +27,7 @@ const OriginalProjectPart2 = () => {
                         <div className="absolute inset-0 z-20 bg-transparent"></div>
                         <iframe
                             className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src={`https://www.youtube.com/embed/${videos[0].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[0].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0`}
+                            src={`https://www.youtube.com/embed/${videos[0].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[0].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=hd1080`}
                             title={videos[0].title}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -58,7 +58,7 @@ const OriginalProjectPart2 = () => {
                         <div className="absolute inset-0 z-20 bg-transparent"></div>
                         <iframe
                             className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src={`https://www.youtube.com/embed/${videos[1].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[1].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0`}
+                            src={`https://www.youtube.com/embed/${videos[1].id}?autoplay=1&mute=1&controls=0&loop=1&playlist=${videos[1].id}&showinfo=0&modestbranding=1&disablekb=1&fs=0&rel=0&vq=hd1080`}
                             title={videos[1].title}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

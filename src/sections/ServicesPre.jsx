@@ -12,14 +12,14 @@ const ServicesPre = () => {
                         <img
                             src="https://i.postimg.cc/xT826ZNP/page3-01.png"
                             alt="2D Concept Art"
-                            className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+                            className="w-full h-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                     </div>
                     <div className="bg-brand-gray p-4 rounded-lg border border-gray-800 h-80 flex items-center justify-center overflow-hidden">
                         <img
                             src="https://i.postimg.cc/YC0xbB3h/page3-00.png"
                             alt="3D Wireframe"
-                            className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-300"
+                            className="w-full h-full object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                         />
                     </div>
 

@@ -5,7 +5,7 @@ const ServicesPost = () => {
         <section id="services-post" className="py-24 bg-brand-black text-white">
             <div className="container mx-auto px-6">
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 h-auto lg:h-[600px]">
+                <div className="grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 gap-6 h-auto bg-brand-black">
 
                     {/* 1. Description Card (Top Left) */}
                     <div className="bg-brand-gray border border-gray-700 p-8 flex flex-col justify-center rounded-lg">
@@ -22,7 +22,7 @@ const ServicesPost = () => {
                     <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
                         <iframe
                             className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src="https://www.youtube.com/embed/v2omUQWFNnI?autoplay=1&mute=1&controls=0&loop=1&playlist=v2omUQWFNnI"
+                            src="https://www.youtube.com/embed/v2omUQWFNnI?autoplay=1&mute=1&controls=0&loop=1&playlist=v2omUQWFNnI&vq=hd1080"
                             title="Wireframe Pass"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -36,7 +36,7 @@ const ServicesPost = () => {
                         <img
                             src="https://i.postimg.cc/zfQbfQHm/john-astudillo-pelo.jpg"
                             alt="Final High-Quality Render"
-                            className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
+                            className="w-full h-full object-contain transform transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6">
                             <span className="text-white font-bold tracking-wider">FINAL RENDER</span>
