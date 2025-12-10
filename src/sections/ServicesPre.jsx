@@ -46,7 +46,7 @@ const ServicesPre = () => {
                                 <img
                                     src={item.url}
                                     alt={`Storyboard Panel ${item}`}
-                                    className="w-full h-full object-cover sepia"
+                                    className="w-full h-full object-contain sepia"
                                 />
                             </div>
                         ))}

@@ -13,7 +13,7 @@ const AboutUs = () => {
                             ABOUT US
                         </h2>
                         <p className="text-lg text-gray-300 leading-relaxed">
-                            QU4DLINE is a boutique animation studio founded by four Latin American artists specialized in 3D animation, cinematic storytelling, and stylized visual content. Our strength lies in blending narrative, technical precision, and high-end visual direction. We support projects from concept to final render, delivering international-level results with efficiency, clarity, and craftsmanship.
+                            Q4Dline is a boutique animation studio founded by four Latin American artists specialized in 3D animation, cinematic storytelling, and stylized visual content. Our strength lies in blending narrative, technical precision, and high-end visual direction. We support projects from concept to final render, delivering international-level results with efficiency, clarity, and craftsmanship.
                         </p>
                     </div>
 

@@ -13,7 +13,7 @@ const Contact = () => {
                     <div className="space-y-8">
                         <h3 className="text-2xl font-bold tracking-wide">Have a project in mind?</h3>
                         <p className="text-gray-300 leading-relaxed text-lg">
-                            At QU4DLINE, we collaborate with studios, brands, and production companies who seek high-end animation, cinematics, visual design, and stylized content.
+                            At Q4Dline, we collaborate with studios, brands, and production companies who seek high-end animation, cinematics, visual design, and stylized content.
                         </p>
                         <p className="text-gray-300 leading-relaxed text-lg">
                             Tell us about your idea, your team, or your upcoming production. We’re ready to support you from concept development to final render.
@@ -80,7 +80,7 @@ const Contact = () => {
 
             {/* Footer Copyright */}
             <div className="mt-24 pt-8 border-t border-gray-800 text-center text-gray-500 text-sm">
-                &copy; {new Date().getFullYear()} QU4DLINE. All rights reserved.
+                &copy; {new Date().getFullYear()} Q4Dline. All rights reserved.
             </div>
         </section>
     );

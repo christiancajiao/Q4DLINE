@@ -18,6 +18,7 @@ const OriginalProject = () => {
                 <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center tracking-widest uppercase">
                     ORIGINAL PROJECT — KHEPER
                 </h2>
+                <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center tracking-widest uppercase">( Work In Progress)  </h3>
 
                 {/* Image Grid (2 rows) */}
                 {/* Image Grid (3 columns) */}
@@ -30,7 +31,7 @@ const OriginalProject = () => {
                                 <img
                                     src={image.url}
                                     alt={`Kheper Detail ${image.id}`}
-                                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0"
+                                    className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0"
                                 />
                             </div>
                         ))}
@@ -41,7 +42,7 @@ const OriginalProject = () => {
                         <img
                             src="https://i.postimg.cc/Jhd8CVDq/Caminante.png"
                             alt="Kheper Vertical Shot 1"
-                            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0"
+                            className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0"
                         />
                     </div>
 
@@ -50,7 +51,7 @@ const OriginalProject = () => {
                         <img
                             src="https://i.postimg.cc/gj23XhkJ/vistas-Acorazado.png"
                             alt="Kheper Vertical Shot 2"
-                            className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0"
+                            className="w-full h-full object-contain transform transition-transform duration-500 group-hover:scale-110 grayscale hover:grayscale-0"
                         />
                     </div>
 
@@ -59,7 +60,7 @@ const OriginalProject = () => {
                 {/* Description Text */}
                 <div className="max-w-4xl mx-auto text-center">
                     <p className="text-lg md:text-xl text-gray-300 leading-relaxed tracking-wide">
-                        Kheper is a 3D short film that follows the journey of a small mechanical wanderer crossing vast natural landscapes in search of purpose. Combining hand-drawn textures and a 2D-over-3D visual style, the project explores themes of resilience, transformation, and the quiet bond between nature and machine. As QU4DLINE’s first studio production, Kheper showcases our commitment to narrative-driven worldbuilding and stylized animation.
+                        Kheper is a 3D short film that follows the journey of a small mechanical wanderer crossing vast natural landscapes in search of purpose. Combining hand-drawn textures and a 2D-over-3D visual style, the project explores themes of resilience, transformation, and the quiet bond between nature and machine. As Q4Dline’s first studio production, Kheper showcases our commitment to narrative-driven worldbuilding and stylized animation.
                     </p>
                 </div>
             </div>

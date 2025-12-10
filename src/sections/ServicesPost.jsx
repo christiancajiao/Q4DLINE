@@ -22,7 +22,7 @@ const ServicesPost = () => {
                     <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
                         <iframe
                             className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src="https://www.youtube.com/embed/v2omUQWFNnI?autoplay=1&mute=1&controls=0&loop=1&playlist=v2omUQWFNnI&vq=hd1080"
+                            src="https://www.youtube.com/embed/Qg85-s9KONA?autoplay=1&mute=1&controls=0&loop=1&playlist=Qg85-s9KONA&vq=hd1080"
                             title="Wireframe Pass"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -44,13 +44,12 @@ const ServicesPost = () => {
                     </div>
 
                     {/* 4. Grooming/Tech (Bottom Left - Spans 2 Columns) */}
-                    <div className="lg:col-span-2 bg-blue-300/40  rounded-lg overflow-hidden border border-blue-900/50 relative group h-64 lg:h-auto fit-content">
+                    <div className="lg:col-span-2 rounded-lg overflow-hidden border border-gray-800 relative group h-64 lg:h-auto">
                         <img
                             src="https://i.postimg.cc/8PgvWxKs/john-astudillo-xgen-pasos.jpg"
                             alt="Grooming Simulation"
-                            className="w-full h-full object-contain mix-blend-overlay opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+                            className="w-full h-full object-contain"
                         />
-                        <div className="absolute inset-0 bg-blue-500/10"></div>
                         <div className="absolute bottom-2 left-2 bg-black/70 px-2 py-1 text-xs rounded text-white">XGen / Grooming</div>
                     </div>
 

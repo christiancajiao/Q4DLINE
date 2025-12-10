@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#" onClick={(e) => handleScrollTo(e, '#reel')} className="text-2xl font-bold tracking-widest text-white">
-          QU4DLINE
+          Q4Dline
         </a>
 
         {/* Desktop Menu */}

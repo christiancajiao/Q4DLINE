@@ -50,7 +50,7 @@ const Reel = () => {
             {/* Content Overlay (Optional Title or just clean) */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
                 <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold text-white tracking-[0.2em] opacity-90 animate-fade-in-up">
-                    QU4DLINE
+                    Q4Dline
                 </h1>
             </div>
 

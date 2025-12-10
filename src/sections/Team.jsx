@@ -59,7 +59,7 @@ const Team = () => {
                                 <img
                                     src={member.url}
                                     alt={member.name}
-                                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                                    className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500"
                                 />
                                 {/* Social Overlay */}
                                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
