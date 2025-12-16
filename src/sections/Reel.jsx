@@ -3,7 +3,7 @@ import React from 'react';
 const Reel = () => {
     const videoId = "dUeJa52r-s0";
     const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const embedUrl = `https://www.youtube.com/embed/${videoId}?si=IaGasuVckO3EIetT&autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0`;
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?si=IaGasuVckO3EIetT&autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&playsinline=1`;
 
     return (
         <section id="reel" className="w-full bg-black">

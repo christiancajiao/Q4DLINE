@@ -30,7 +30,7 @@ const ServicesFX = () => {
                         {/* 2. Standard Video */}
                         <div className="relative w-full aspect-video overflow-hidden rounded-lg border border-gray-800 group">
                             <iframe
-                                src={`https://www.youtube.com/embed/${videos[0].id}?autoplay=1&mute=1&loop=1&playlist=${videos[0].id}&controls=0&showinfo=0&rel=0`}
+                                src={`https://www.youtube.com/embed/${videos[0].id}?autoplay=1&mute=1&loop=1&playlist=${videos[0].id}&controls=0&showinfo=0&rel=0&playsinline=1`}
                                 title="Service FX Video 1"
                                 className="absolute inset-0 w-full h-full"
                                 frameBorder="0"
@@ -42,7 +42,7 @@ const ServicesFX = () => {
                     {/* Column 2: Short 1 */}
                     <div className="relative w-full aspect-[9/16] overflow-hidden rounded-lg border border-gray-800 group">
                         <iframe
-                            src={`https://www.youtube.com/embed/${videos[1].id}?autoplay=1&mute=1&loop=1&playlist=${videos[1].id}&controls=0&showinfo=0&rel=0`}
+                            src={`https://www.youtube.com/embed/${videos[1].id}?autoplay=1&mute=1&loop=1&playlist=${videos[1].id}&controls=0&showinfo=0&rel=0&playsinline=1`}
                             title="Service FX Video 2"
                             className="absolute inset-0 w-full h-full"
                             frameBorder="0"
@@ -53,7 +53,7 @@ const ServicesFX = () => {
                     {/* Column 3: Short 2 */}
                     <div className="relative w-full aspect-[9/16] overflow-hidden rounded-lg border border-gray-800 group">
                         <iframe
-                            src={`https://www.youtube.com/embed/${videos[2].id}?autoplay=1&mute=1&loop=1&playlist=${videos[2].id}&controls=0&showinfo=0&rel=0`}
+                            src={`https://www.youtube.com/embed/${videos[2].id}?autoplay=1&mute=1&loop=1&playlist=${videos[2].id}&controls=0&showinfo=0&rel=0&playsinline=1`}
                             title="Service FX Video 3"
                             className="absolute inset-0 w-full h-full"
                             frameBorder="0"

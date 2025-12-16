@@ -22,7 +22,7 @@ const ServicesPost = () => {
                     <div className="bg-brand-dark rounded-lg overflow-hidden border border-gray-800 relative group">
                         <iframe
                             className="absolute inset-0 w-full h-full scale-[1.35] pointer-events-none"
-                            src="https://www.youtube.com/embed/Qg85-s9KONA?autoplay=1&mute=1&controls=0&loop=1&playlist=Qg85-s9KONA&vq=hd1080"
+                            src="https://www.youtube.com/embed/Qg85-s9KONA?autoplay=1&mute=1&controls=0&loop=1&playlist=Qg85-s9KONA&vq=hd1080&playsinline=1"
                             title="Wireframe Pass"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
