@@ -1,6 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const subject = "q4dline web page contact";
+        const body = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
+
+        const mailtoLink = `mailto:q4dline.info@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        window.location.href = mailtoLink;
+    };
+
     return (
         <section id="contact" className="py-24 bg-brand-dark text-white">
             <div className="container mx-auto px-6">
@@ -39,12 +63,16 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <div className="bg-brand-gray p-8 rounded-lg border border-gray-800">
-                        <form className="space-y-6">
+                        <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2 tracking-wide">NAME</label>
                                 <input
                                     type="text"
                                     id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    required
                                     className="w-full bg-brand-black border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-white transition-colors"
                                     placeholder="Your Name"
                                 />
@@ -54,6 +82,10 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    required
                                     className="w-full bg-brand-black border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-white transition-colors"
                                     placeholder="your@email.com"
                                 />
@@ -62,6 +94,10 @@ const Contact = () => {
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2 tracking-wide">MESSAGE</label>
                                 <textarea
                                     id="message"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    required
                                     rows="5"
                                     className="w-full bg-brand-black border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-white transition-colors"
                                     placeholder="Tell us about your project..."

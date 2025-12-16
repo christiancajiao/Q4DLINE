@@ -36,11 +36,11 @@ const Team = () => {
         {
             id: 4,
             name: 'Dan',
-            role: 'Role Title',
-            url: "https://i.postimg.cc/C1qbj0jV/Darshi-Profile.jpg",
+            role: 'Daniel Velasco is a Colombian illustrator and graphic designer with over 12 years of experience,creating, composing, and designing posters, comics, and advertising across various graphic fields, including video games, theater, festivals, and 2D animation.',
+            url: "https://i.postimg.cc/SYJgc9rh/DAN.png",
             socials: [
-                { icon: FaLinkedin, url: '#' },
-                { icon: FaVimeo, url: '#' }
+                { icon: FaArtstation, url: 'https://www.artstation.com/juandanielvelasco4' },
+                { icon: FaInstagram, url: 'https://www.instagram.com/dan.inquieto/' }
             ]
         },
     ];
