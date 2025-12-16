@@ -58,8 +58,9 @@ const OriginalProject = () => {
                 </div>
 
                 {/* Description Text */}
-                <div className="max-w-4xl mx-auto text-center">
-                    <p className="text-lg md:text-xl text-gray-300 leading-relaxed tracking-wide">
+                {/* Description Text - Description Card Style */}
+                <div className="bg-brand-gray border border-gray-700 p-8 rounded-lg flex flex-col items-center justify-center w-full">
+                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed tracking-wide text-center">
                         Kheper is a 3D short film that follows the journey of a small mechanical wanderer crossing vast natural landscapes in search of purpose. Combining hand-drawn textures and a 2D-over-3D visual style, the project explores themes of resilience, transformation, and the quiet bond between nature and machine. As Q4Dline’s first studio production, Kheper showcases our commitment to narrative-driven worldbuilding and stylized animation.
                     </p>
                 </div>

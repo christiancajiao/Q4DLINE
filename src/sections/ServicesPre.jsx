@@ -24,12 +24,13 @@ const ServicesPre = () => {
                     </div>
 
 
-                    {/* Right: Text Block */}
-                    <div className="flex flex-col justify-center h-full pl-4">
-                        <h3 className="text-3xl font-bold mb-6 tracking-widest uppercase text-white border-l-4 border-white pl-4">
+                    {/* Right: Text Block - Description Card Style */}
+                    <div className="bg-brand-gray border border-gray-700 p-8 flex flex-col justify-center rounded-lg h-full">
+                        <h3 className="text-3xl font-bold mb-6 tracking-widest uppercase text-white">
                             Services - Pre
                         </h3>
-                        <p className="text-gray-300 leading-relaxed text-lg pl-4">
+                        <div className="w-12 h-1 bg-white mb-8"></div>
+                        <p className="text-gray-300 leading-relaxed text-lg">
                             We build the creative and visual foundation of every project. From initial sketches to detailed animatics, our pre-production process ensures that every character, environment, and story beat is meticulously planned before production begins.
                         </p>
                     </div>

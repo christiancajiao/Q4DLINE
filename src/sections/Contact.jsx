@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -6,6 +7,10 @@ const Contact = () => {
         email: '',
         message: ''
     });
+
+    const form = useRef();
+    const [loading, setLoading] = useState(false);
+    const [status, setStatus] = useState('');
 
     const handleChange = (e) => {
         setFormData({
@@ -16,13 +21,27 @@ const Contact = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setLoading(true);
+        setStatus('');
 
-        const subject = "q4dline web page contact";
-        const body = `Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`;
-
-        const mailtoLink = `mailto:q4dline.info@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-        window.location.href = mailtoLink;
+        emailjs.sendForm(
+            'service_gd0jhaj',
+            'template_eoxrsjp',
+            form.current,
+            'g_HUD6J-n_pR3Ly-9'
+        )
+            .then((result) => {
+                console.log(result.text);
+                setLoading(false);
+                setStatus('success');
+                setFormData({ name: '', email: '', message: '' });
+                alert("Message sent successfully!");
+            }, (error) => {
+                console.log(error.text);
+                setLoading(false);
+                setStatus('error');
+                alert("Failed to send message. Please try again or email us directly.");
+            });
     };
 
     return (
@@ -63,13 +82,13 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <div className="bg-brand-gray p-8 rounded-lg border border-gray-800">
-                        <form className="space-y-6" onSubmit={handleSubmit}>
+                        <form ref={form} className="space-y-6" onSubmit={handleSubmit}>
                             <div>
                                 <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2 tracking-wide">NAME</label>
                                 <input
                                     type="text"
                                     id="name"
-                                    name="name"
+                                    name="name" // IMPORTANT: Must match EmailJS template variable
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
@@ -82,7 +101,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
-                                    name="email"
+                                    name="email" // IMPORTANT: Must match EmailJS template variable
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
@@ -94,7 +113,7 @@ const Contact = () => {
                                 <label htmlFor="message" className="block text-sm font-medium text-gray-400 mb-2 tracking-wide">MESSAGE</label>
                                 <textarea
                                     id="message"
-                                    name="message"
+                                    name="message" // IMPORTANT: Must match EmailJS template variable
                                     value={formData.message}
                                     onChange={handleChange}
                                     required
@@ -105,9 +124,10 @@ const Contact = () => {
                             </div>
                             <button
                                 type="submit"
-                                className="w-full bg-white text-black font-bold py-4 rounded hover:bg-gray-200 transition-colors tracking-widest uppercase"
+                                disabled={loading}
+                                className="w-full bg-white text-black font-bold py-4 rounded hover:bg-gray-200 transition-colors tracking-widest uppercase disabled:opacity-50 disabled:cursor-not-allowed"
                             >
-                                Send Message
+                                {loading ? 'Sending...' : 'Send Message'}
                             </button>
                         </form>
                     </div>
