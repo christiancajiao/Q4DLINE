@@ -37,10 +37,12 @@ const Contact = () => {
                 setFormData({ name: '', email: '', message: '' });
                 alert("Message sent successfully!");
             }, (error) => {
-                console.log(error.text);
+                console.error('EmailJS Error:', error);
                 setLoading(false);
                 setStatus('error');
-                alert("Failed to send message. Please try again or email us directly.");
+                // Try to show a more specific error message if available
+                const errorMessage = error.text || "Unknown error occurred";
+                alert(`Failed to send message: ${errorMessage}. Please check the console for more details.`);
             });
     };
 

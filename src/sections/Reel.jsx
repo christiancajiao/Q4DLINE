@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Reel = () => {
-    const videoId = "dUeJa52r-s0";
-    const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const embedUrl = `https://www.youtube.com/embed/${videoId}?si=IaGasuVckO3EIetT&autoplay=1&mute=1&loop=1&playlist=${videoId}&controls=0&showinfo=0&rel=0&playsinline=1`;
+    const videoId = "1147655572";
+    const videoUrl = `https://vimeo.com/${videoId}`;
+    const embedUrl = `https://player.vimeo.com/video/${videoId}?background=1&autoplay=1&loop=1&byline=0&title=0`;
 
     return (
         <section id="reel" className="w-full bg-black">
@@ -15,7 +15,7 @@ const Reel = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="absolute inset-0 z-20 w-full h-full"
-                    aria-label="Watch full video on YouTube"
+                    aria-label="Watch full video on Vimeo"
                 >
                 </a>
 
@@ -25,7 +25,7 @@ const Reel = () => {
                         src={embedUrl}
                         title="Q4Dline Reel"
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allow="autoplay; fullscreen; picture-in-picture"
                         referrerPolicy="strict-origin-when-cross-origin"
                         allowFullScreen
                         className="w-full h-full object-cover"
