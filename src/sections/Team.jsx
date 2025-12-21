@@ -37,7 +37,7 @@ const Team = () => {
             id: 4,
             name: 'Dan',
             role: 'Daniel Velasco is a Colombian illustrator and graphic designer with over 12 years of experience,creating, composing, and designing posters, comics, and advertising across various graphic fields, including video games, theater, festivals, and 2D animation.',
-            url: "https://i.postimg.cc/qqGWVX6z/DAN.png",
+            url: "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Dan.png",
             socials: [
                 { icon: FaArtstation, url: 'https://www.artstation.com/juandanielvelasco4' },
                 { icon: FaInstagram, url: 'https://www.instagram.com/dan.inquieto/' }
