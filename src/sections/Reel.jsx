@@ -21,7 +21,7 @@ const Reel = () => {
     }, []);
 
     const videoSrc = isMobile
-        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReeNuevoStudiol%2B07_vertical.mp4"
+        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReeNuevoStudiol%2B08_vertical.mp4"
         : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4";
 
     const posterSrc = isMobile
