@@ -1,10 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LazyVideo from '../components/LazyVideo';
 
 const Reel = () => {
     const videoId = "1147655572";
     const videoUrl = `https://vimeo.com/${videoId}`;
     const embedUrl = `https://player.vimeo.com/video/${videoId}?background=1&autoplay=1&loop=1&byline=0&title=0`;
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
+    const videoSrc = isMobile
+        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReeNuevoStudiol%2B07_vertical.mp4"
+        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4";
+
+    const posterSrc = isMobile
+        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/reelStillVertical.png"
+        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png";
 
     return (
         <section id="reel" className="w-full bg-black">
@@ -20,11 +41,12 @@ const Reel = () => {
                 >
                     {/* Video Background */}
                     <LazyVideo
-                        src="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reelnuevostudio%2007.mp4"
-                        poster="https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png"
+                        key={isMobile ? 'mobile' : 'desktop'}
+                        src={videoSrc}
+                        poster={posterSrc}
                         alt="Q4Dline Reel"
                         className="absolute inset-0 w-full h-full"
-                        objectFit="cover"
+                        objectFit={isMobile ? "contain" : "cover"}
                     />
                 </a>
 
