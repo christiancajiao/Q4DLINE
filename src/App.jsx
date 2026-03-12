@@ -5,6 +5,7 @@ import Services from './sections/Services';
 import ServicesPre from './sections/ServicesPre';
 import ServicesPro from './sections/ServicesPro';
 import ServicesPost from './sections/ServicesPost';
+import ReelSuperman from './sections/ReelSuperman';
 import ServicesFX from './sections/ServicesFX';
 import OriginalProject from './sections/OriginalProject';
 import OriginalProjectPart2 from './sections/OriginalProjectPart2';
@@ -21,6 +22,7 @@ function App() {
       <ServicesPre />
       <ServicesPro />
       <ServicesPost />
+      <ReelSuperman />
       <ServicesFX />
       <OriginalProject />
       <OriginalProjectPart2 />

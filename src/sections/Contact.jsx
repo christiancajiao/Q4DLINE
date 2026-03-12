@@ -67,8 +67,8 @@ const Contact = () => {
                         <div className="pt-8 space-y-4">
                             <div className="flex items-center space-x-4">
                                 <span className="text-2xl">📩</span>
-                                <a href="mailto:q4dline.info@gmail.com" className="text-xl hover:text-white/80 transition-colors">
-                                    q4dline.info@gmail.com
+                                <a href="mailto:studio@q4dline.com" className="text-xl hover:text-white/80 transition-colors">
+                                    studio@q4dline.com
                                 </a>
                             </div>
                             <div className="flex items-center space-x-4">

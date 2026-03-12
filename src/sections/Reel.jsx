@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaVimeoV, FaYoutube } from "react-icons/fa";
+import { FaVimeoV, FaYoutube, FaInstagram, FaLinkedin } from "react-icons/fa";
 import LazyVideo from '../components/LazyVideo';
 
 const Reel = () => {
@@ -72,6 +72,24 @@ const Reel = () => {
                             aria-label="Watch on YouTube"
                         >
                             <FaYoutube size={28} />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/company/q4dline-studio/?viewAsMember=true"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-[#0A66C2] transition-colors duration-300"
+                            aria-label="Visit our LinkedIn"
+                        >
+                            <FaLinkedin size={26} />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/q4dline/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-gray-400 hover:text-[#E4405F] transition-colors duration-300"
+                            aria-label="Visit our Instagram"
+                        >
+                            <FaInstagram size={26} />
                         </a>
                     </div>
                 </div>
