@@ -20,8 +20,16 @@ const ReelSuperman = () => {
 
     return (
         <section id="reel-superman" className="w-full bg-black">
-            {/* Video Container */}
-            <div className="relative w-full h-screen md:h-auto md:aspect-video group">
+            {/* Title Section */}
+            <div className="container mx-auto px-6 py-12 flex flex-col items-start justify-center">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-widest uppercase text-white">
+                    SERVICES - POST- VFX ANIMATION
+                </h2>
+                <div className="w-12 h-1 bg-white mb-4"></div>
+            </div>
+
+            {/* Video Container - Clickable Link */}
+            <a href="#" target="_blank" rel="noopener noreferrer" className="block relative w-full h-screen md:h-auto md:aspect-video group cursor-pointer">
                 {/* Video Background */}
                 <LazyVideo
                     key={isMobile ? 'mobile' : 'desktop'}
@@ -32,8 +40,9 @@ const ReelSuperman = () => {
                 />
 
                 {/* Optional Overlay Gradient/Logo */}
-                <div className="absolute inset-0 bg-black/10 pointer-events-none z-10 transition-colors group-hover:bg-black/20"></div>
-            </div>
+                <div className="absolute inset-0 bg-black/10 pointer-events-none z-10 transition-colors group-hover:bg-black/20 flex items-center justify-center">
+                </div>
+            </a>
 
             {/* Disclaimer Text */}
             <div className="container mx-auto px-6 py-8">
