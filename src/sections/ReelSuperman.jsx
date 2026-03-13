@@ -22,10 +22,9 @@ const ReelSuperman = () => {
         <section id="reel-superman" className="w-full bg-black">
             {/* Title Section */}
             <div className="container mx-auto px-6 py-12 flex flex-col items-start justify-center">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-widest uppercase text-white">
+                <h2 className="text-3xl font-bold mb-12 tracking-widest uppercase text-white border-l-4 border-brand-primary pl-4">
                     SERVICES - POST- VFX ANIMATION
                 </h2>
-                <div className="w-12 h-1 bg-white mb-4"></div>
             </div>
 
             {/* Video Container - Clickable Link */}

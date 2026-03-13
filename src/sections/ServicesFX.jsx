@@ -29,10 +29,9 @@ const ServicesFX = () => {
                     <div className="bg-brand-gray border border-gray-700 p-8 flex flex-col justify-center rounded-lg
                         md:col-span-3 md:order-last
                         lg:col-span-1 lg:order-first lg:row-span-1">
-                        <h3 className="text-3xl font-bold mb-6 tracking-widest uppercase text-white">
+                        <h3 className="text-3xl font-bold mb-12 tracking-widest uppercase text-white border-l-4 border-brand-primary pl-4">
                             Services - 2D FX
                         </h3>
-                        <div className="w-12 h-1 bg-white mb-8"></div>
                         <p className="text-gray-300 leading-relaxed text-lg">
                             We create 2D effects animation that enhances visual storytelling and emotional impact.
                             From stylized effects to dynamic graphic elements, our 2D FX integrate seamlessly

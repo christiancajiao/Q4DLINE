@@ -25,7 +25,7 @@ const OriginalProjectPart2 = () => {
         <section id="original-project-part2" className="py-24 bg-brand-dark text-white border-t border-gray-800">
             <div className="container mx-auto px-6">
 
-                <h3 className="text-2xl font-bold mb-12 tracking-widest uppercase text-gray-400">
+                <h3 className="text-3xl font-bold mb-12 tracking-widest uppercase text-white border-l-4 border-brand-primary pl-4">
                     Character & Motion Study
                 </h3>
 

@@ -10,10 +10,9 @@ const ServicesPost = () => {
 
                     {/* 1. Description Card (Top Left) */}
                     <div className="bg-brand-gray border border-gray-700 p-8 flex flex-col justify-center rounded-lg">
-                        <h3 className="text-3xl font-bold mb-6 tracking-widest uppercase text-white">
+                        <h3 className="text-3xl font-bold mb-12 tracking-widest uppercase text-white border-l-4 border-brand-primary pl-4">
                             Services - Post
                         </h3>
-                        <div className="w-12 h-1 bg-white mb-8"></div>
                         <p className="text-gray-300 leading-relaxed text-lg">
                             We polish the final piece to perfection. Our post-production pipeline handles everything from advanced grooming and simulation to lighting, compositing, and visual effects. We ensure that every frame meets the highest standards of visual fidelity and artistic intent.
                         </p>
