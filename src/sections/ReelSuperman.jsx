@@ -16,7 +16,9 @@ const ReelSuperman = () => {
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
-    const videoSrc = "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reel%20Superman%20Q4dline.mp4";
+    const videoSrc = isMobile
+        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Superman%20Reel%20Vertical%20Q4dline_.mp4"
+        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reel%20Superman%20Q4dline.mp4";
 
     return (
         <section id="reel-superman" className="w-full bg-black">
