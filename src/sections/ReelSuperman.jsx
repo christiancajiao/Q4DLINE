@@ -23,8 +23,8 @@ const ReelSuperman = () => {
         : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/Reel%20Superman%20Q4dline.mp4";
 
     const posterSrc = isMobile
-        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/reelStillVertical.png"
-        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/ReelStill.png";
+        ? "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/captura%20verticalSL.png"
+        : "https://pub-a3dfd359e9d342bc800cb0fee0e46ca2.r2.dev/captura%20horizontal%20SL.png";
 
     return (
         <section id="reel" className="w-full bg-black">
