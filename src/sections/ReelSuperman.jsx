@@ -28,31 +28,34 @@ const ReelSuperman = () => {
 
     return (
         <section id="reel" className="w-full bg-black">
-            {/* Video Container */}
-            <h3 className="text-3xl font-bold mb-12 tracking-widest uppercase text-white border-l-4 border-brand-primary pl-4">
-                SERVICES - POST- VFX ANIMATION
-            </h3>
-            <div className="relative w-full h-screen md:h-auto md:aspect-video group">
-                {/* Video Background */}
-                <a
-                    href="https://vimeo.com/1172593490?fl=pl&fe=sh"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-400 hover:text-[#1AB7EA] transition-colors duration-300"
-                    aria-label="Watch on Vimeo"
-                >
-                    <LazyVideo
-                        key={isMobile ? 'mobile' : 'desktop'}
-                        src={videoSrc}
-                        poster={posterSrc}
-                        alt="Q4Dline Superman Reel"
-                        className="absolute inset-0 w-full h-full"
-                        objectFit={isMobile ? "contain" : "cover"}
-                    />
-                </a>
+            <div className="container mx-auto px-6">
+                {/* Video Container */}
+                <h3 className="text-3xl font-bold mb-12 tracking-widest uppercase text-white border-l-4 border-brand-primary pl-4">
+                    SERVICES - POST- VFX ANIMATION
+                </h3>
+                <div className="relative w-full h-screen md:h-auto md:aspect-video group">
+                    {/* Video Background */}
+                    <a
+                        href="https://vimeo.com/1172593490?fl=pl&fe=sh"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-gray-400 hover:text-[#1AB7EA] transition-colors duration-300"
+                        aria-label="Watch on Vimeo"
+                    >
+                        <LazyVideo
+                            key={isMobile ? 'mobile' : 'desktop'}
+                            src={videoSrc}
+                            poster={posterSrc}
+                            alt="Q4Dline Superman Reel"
+                            className="absolute inset-0 w-full h-full"
+                            objectFit={isMobile ? "contain" : "cover"}
+                        />
+                    </a>
 
 
-                {/* Optional Overlay Gradient/Logo */}
+                    {/* Optional Overlay Gradient/Logo */}
+                </div>
+
             </div>
 
             {/* Disclaimer Text */}
